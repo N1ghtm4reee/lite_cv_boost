@@ -1,0 +1,24 @@
+# Generated application bundles and local Airtable retry state contain personal data.
+applications/
+.tracking/
+
+# User-provided inputs and generated root-level resumes contain personal data.
+/resume.tex
+/job_description.md
+/*_tailored.tex
+/*_tailored.pdf
+/resume_tailored.tex
+/resume_tailored.pdf
+
+# Python and test caches.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# LaTeX build by-products outside generated application bundles.
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk

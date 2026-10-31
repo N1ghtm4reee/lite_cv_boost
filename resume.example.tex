@@ -1,0 +1,87 @@
+\documentclass[10pt,a4paper]{article}
+
+% ===== TEMPLATE: keep stable when tailoring =====
+\usepackage[margin=0.55in]{geometry}
+\usepackage{XCharter}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\raggedright
+\pagestyle{empty}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\titleformat{\section}{\bfseries\normalsize}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+\setlist[itemize]{leftmargin=13pt,topsep=2pt,partopsep=0pt,itemsep=1pt,parsep=0pt}
+
+\newcommand{\resumeRole}[4]{%
+  \textbf{#1}\hfill\textbf{#2}\\[-1pt]
+  \textit{#3}\hfill\textit{#4}\par\vspace{-2pt}
+}
+\newcommand{\resumeProject}[3]{%
+  \href{#2}{\textbf{#1}}\hfill\textit{#3}\par\vspace{-2pt}
+}
+\newcommand{\resumeBulletsStart}{\begin{itemize}}
+\newcommand{\resumeBulletsEnd}{\end{itemize}\vspace{2pt}}
+
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries Sample Candidate}\\[3pt]
+  \href{mailto:candidate@example.com}{candidate@example.com} $\vert$
+  +00 000 000 000 $\vert$
+  \href{https://example.com/profile}{Professional Profile} $\vert$
+  \href{https://example.com/code}{Code Portfolio}
+\end{center}
+\vspace{-9pt}
+
+% ===== EDITABLE: EXPERIENCE BULLETS ONLY; ROLE METADATA IS IMMUTABLE =====
+\section*{Experience}
+\resumeRole{Example Systems}{Jan 2025 -- Jun 2025}{Software Engineer, Internship}{Hybrid}
+\resumeBulletsStart
+  \item Developed backend services and REST APIs for an internal web application.
+  \item Added automated tests and diagnosed performance bottlenecks in development environments.
+  \item Collaborated with engineers to document services and improve deployment workflows.
+\resumeBulletsEnd
+
+\resumeRole{Sample Labs}{Jun 2024 -- Aug 2024}{Platform Engineer, Internship}{Remote}
+\resumeBulletsStart
+  \item Containerized application services and automated repeatable development deployments.
+  \item Configured service monitoring and access controls for a distributed test environment.
+  \item Maintained CI/CD workflows and documented operational procedures.
+\resumeBulletsEnd
+
+% ===== EDITABLE: SKILLS VALUES ONLY =====
+\section*{Skills}
+\textbf{Programming:} Python, JavaScript, Java, SQL, Bash\\
+\textbf{Backend:} REST APIs, HTTP, Node.js, Microservices\\
+\textbf{Cloud \& DevOps:} Docker, Kubernetes, Terraform, CI/CD\\
+\textbf{Data:} PostgreSQL, SQLite, Redis\\
+\textbf{Tools:} Git, Linux, Automated Testing, Monitoring
+
+% ===== IMMUTABLE: EDUCATION =====
+\section*{Education}
+\textbf{Example Institute of Technology} -- Computer Science\hfill 2022 -- 2026
+
+% ===== EDITABLE: EXISTING PROJECT BULLETS ONLY; NAMES/LINKS IMMUTABLE =====
+\section*{Projects}
+\resumeProject{Sample Collaboration Platform}{https://example.com/project-one}{Backend \& Infrastructure}
+\resumeBulletsStart
+  \item Built a web application using REST APIs, a relational database, and real-time messaging.
+  \item Added containerized local environments and automated test workflows.
+  \item Instrumented application services with metrics and structured logging.
+\resumeBulletsEnd
+
+\resumeProject{Sample HTTP Server}{https://example.com/project-two}{Systems Programming}
+\resumeBulletsStart
+  \item Implemented an HTTP server with non-blocking I/O and request parsing.
+  \item Added configurable routing, error handling, and response generation.
+  \item Tested file uploads and persistent connection behavior.
+\resumeBulletsEnd
+
+\section*{Certifications}
+Sample Cloud Fundamentals Certificate
+\end{document}
